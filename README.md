@@ -29,27 +29,29 @@ Prism.getInstance()
 OR
 ```
 Prism.getInstance()
-     .loadBitmapFrom(url, requestTag)
-     .new BitmapResponseListener(){
-           @overrid
-           public void onResponse(Bitmap bitmap){//play with your bitmap}
-           
-           @override
-           public void onError(String errorMsg){}
-      }.execute();
+     .loadBitmapFrom(url, requestTag, new BitmapResponseListener() {
+            @Override
+            public void onResponse(Bitmap bitmap) {
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+            }
+        }).execute();
 ```
 
 ##Fetching String
 ```
 Prism.getInstance()
-     .loadStringFrom(url, requestTag)
-     .new StringResponseListener(){
-           @overrid
-           public void onResponse(String response){}
-           
-           @override
-           public void onError(String errorMsg){}
-      }.execute();
+     .loadStringFrom(url, requestTag, new StringResponseListener() {
+            @Override
+            public void onResponse(String response) {
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+            }
+        }).execute();
 ```
 ##Example
 You can look at the source code of CacheLoading project which uses Prism Lib for its network operations
