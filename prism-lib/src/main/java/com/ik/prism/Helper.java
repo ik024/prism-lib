@@ -35,7 +35,7 @@ public class Helper {
 
     /*Executors related methods*/
 
-    public synchronized void addRequest(String requestTag, AsyncTaskExecutor taskExe) {
+    public void addRequest(String requestTag, AsyncTaskExecutor taskExe) {
         if (mExecutorMapList.get(requestTag) == null) {
             List<AsyncTaskExecutor> executorList = new ArrayList<>();
             executorList.add(taskExe);
@@ -47,7 +47,7 @@ public class Helper {
         }
     }
 
-    public synchronized void cancelRequest(String requestTag) {
+    public void cancelRequest(String requestTag) {
         if (mExecutorMapList.get(requestTag) != null) {
             for (AsyncTaskExecutor taskExe : mExecutorMapList.get(requestTag)) {
                 taskExe.cancel(true);
@@ -56,7 +56,7 @@ public class Helper {
         }
     }
 
-    public synchronized void removeRequest(String requestTag) {
+    public void removeRequest(String requestTag) {
         mExecutorMapList.remove(requestTag);
     }
 
