@@ -55,3 +55,5 @@ Prism.getInstance()
 You can look at the source code of CacheLoading project which uses Prism Lib for its network operations
 https://github.com/ik024/prism-lib/tree/master/app
 
+![cache_loading](https://cloud.githubusercontent.com/assets/4861930/22620332/a37ab952-eb2f-11e6-931c-48eda752edc8.gif)
+
