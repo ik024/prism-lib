@@ -22,14 +22,14 @@ There are two ways to fetch bitmap using Prism
 
 ```
 Prism.getInstance()
-     .loadBitmapFrom(imageUrl)
+     .loadBitmapFrom(url, requestTag)
      .into(imagView)
      .execute();
 ```
 OR
 ```
 Prism.getInstance()
-     .loadBitmapFrom(imageUrl)
+     .loadBitmapFrom(url, requestTag)
      .new BitmapResponseListener(){
            @overrid
            public void onResponse(Bitmap bitmap){//play with your bitmap}
@@ -42,7 +42,7 @@ Prism.getInstance()
 ##Fetching String
 ```
 Prism.getInstance()
-     .loadStringFrom(imageUrl)
+     .loadStringFrom(url, requestTag)
      .new StringResponseListener(){
            @overrid
            public void onResponse(String response){}
@@ -51,3 +51,7 @@ Prism.getInstance()
            public void onError(String errorMsg){}
       }.execute();
 ```
+##Example
+You can look at the source code of CacheLoading project which uses Prism Lib for its network operations
+https://github.com/ik024/prism-lib/tree/master/app
+
