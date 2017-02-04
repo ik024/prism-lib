@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CacheLoading</string>
+    <string name="tag_user_list">user_list</string>
+    <string name="url_user_list">http://pastebin.com/raw/wgkJgazE</string>
+    <string name="tag_image">tag_image</string>
+    <string name="last_view_reached">Last item reached. No more items to load</string>
+    <string name="msg_loading">Loading...</string>
+    <string name="msg_no_internet">Not connected to internet</string>
+    <string name="snack_msg_no_internet">Please connect to internet and try again</string>
+    <string name="msg_error">There was some error.\nPlease try again later</string>
+</resources>
