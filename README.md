@@ -3,7 +3,7 @@
 ## Usage
 In order to use this library in your project follow the following steps
 
-First import the prism-lib module in your project and then add the following in your
+First import the **prism-lib** module in your project and then add the following in your
  **build.gradle** file
 
 ```
