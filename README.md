@@ -1,9 +1,9 @@
 # Prism Library - For all your network related operation
 
 ## Usage
-In order to use this library in your project follow the following steps
+####In order to use this library in your project follow the following steps:
 
-First import the **prism-lib** module in your project and then add the following in your
+Import the **prism-lib** module in your project and then add the following in your
  **build.gradle** file
 
 ```
@@ -15,7 +15,7 @@ dependencies {
 ```
 
 ## Features
-Currently this library supporst API that return Bitmap and String but can be extended as per requirement
+###Currently this library supports APIs that return Bitmap and String only, but will be extended to other formats in the future.
 
 ##Fetching Bitmap
 There are two ways to fetch bitmap using Prism
