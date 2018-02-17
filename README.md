@@ -42,7 +42,8 @@ Prism.getInstance()
         }).execute();
 ```
 
-##Fetching String
+## Fetching String
+
 ```
 Prism.getInstance()
      .loadStringFrom(url, requestTag, new StringResponseListener() {
@@ -55,7 +56,7 @@ Prism.getInstance()
             }
         }).execute();
 ```
-##Example
+## Example
 You can look at the source code of CacheLoading project which uses Prism Lib for its network operations
 https://github.com/ik024/prism-lib/tree/master/app
 
